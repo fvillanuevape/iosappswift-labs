@@ -9,10 +9,41 @@ import SwiftUI
 
 struct ButtonComponent: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Hola"){
+            print("Hola")
+        }
+        Button(
+            action: { print("Hola")},
+            label: {
+                Text("Hola")
+                    .frame(width: 100)
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(5)
+            }
+        )
+    }
+}
+
+struct CounterView: View {
+   
+    @State var suscribersNumber = 0
+    var body: some View {
+        Button(
+            action: { suscribersNumber += 1},
+            label: {
+                Text("Suscriptions: \(suscribersNumber)")
+                    .bold()
+                    .font(.title)
+                    .frame(width: 100)
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(5)
+            }
+        )
     }
 }
 
 #Preview {
-    ButtonComponent()
+    CounterView()
 }
