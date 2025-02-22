@@ -75,10 +75,10 @@
 		30E010E52D5F861000ACBDEF = {
 			isa = PBXGroup;
 			children = (
-				30E010F02D5F861000ACBDEF /* taskapp */,
 				30E011012D5F861200ACBDEF /* taskappTests */,
 				30E0110B2D5F861200ACBDEF /* taskappUITests */,
 				30E010EF2D5F861000ACBDEF /* Products */,
+				30E010F02D5F861000ACBDEF /* taskapp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -396,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"taskapp/Preview Content\"";
+				DEVELOPMENT_TEAM = B3FDVVLSUR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"taskapp/Preview Content\"";
+				DEVELOPMENT_TEAM = B3FDVVLSUR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
