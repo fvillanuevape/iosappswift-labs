@@ -11,7 +11,7 @@ import SwiftUI
 struct taskappApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExerciseOne()
         }
     }
 }
