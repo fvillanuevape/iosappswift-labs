@@ -43,17 +43,30 @@ struct ToggleButtonComponent: View {
     let imageName: String
     let gender: Int
     
+    
     @Binding var genderSelected: Int
     
+    
+
+    
     var body: some View {
-        Button(action: {})
+        
+        let color = if(gender == genderSelected){
+            Color.backgroundComponentSelected
+        }else{
+            Color.backgroundComponent
+        }
+        
+        Button(action: {
+            genderSelected = gender
+        })
         {
             VStack{
                 ImageComponentApp(imageName: imageName)
                 InformationComponent(textInformation: text)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.backgroundComponent)
+            .background(color)
         }
     }
 }
